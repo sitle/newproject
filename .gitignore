@@ -1,4 +1,7 @@
 .rake_test_cache
+.vagrant
+box
+site-cookbooks
 
 ###
 # Ignore Chef key files and secrets
