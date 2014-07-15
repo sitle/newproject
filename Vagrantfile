@@ -68,7 +68,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     end
   end
 
-    config.vm.define :node2 do |c|
+  config.vm.define :node2 do |c|
     # Personnalisation de la box (OS)
     c.vm.box = "centos6.5"
 
