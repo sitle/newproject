@@ -1,0 +1,19 @@
+{
+  "name": "bareos-server",
+  "description": "This role contains nodes, which act as bareos servers",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[bareos::default]",
+    "recipe[bareos::database]",
+    "recipe[bareos::server]",
+    "recipe[bareos::storage]",
+    "recipe[bareos::workstation]"
+  ],
+  "env_run_lists": {
+  }
+}

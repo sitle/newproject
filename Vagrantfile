@@ -56,7 +56,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       chef.custom_config_path = "Vagrantfile.chef"
 
       # Application des recipes/roles
-      # chef.add_role("base-servers")
+      chef.add_role("bareos-server")
     end
 
     # Personnalisation du provider : virtualbox
@@ -87,7 +87,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       chef.custom_config_path = "Vagrantfile.chef"
 
       # Application des recipes/roles
-      # chef.add_role("base-servers")
+      chef.add_role("bareos-client")
     end
 
     # Personnalisation du provider : virtualbox
