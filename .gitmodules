@@ -1,0 +1,3 @@
+[submodule "site-cookbooks/bareos"]
+	path = site-cookbooks/bareos
+	url = https://github.com/sitle/chef-bareos.git
