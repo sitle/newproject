@@ -5,7 +5,7 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  
+
   config.vm.define :chef do |c|
     # Personnalisation de la box (OS)
     c.vm.box = "centos6.5"
@@ -25,7 +25,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       chef.custom_config_path = "Vagrantfile.chef"
 
       # Application des recipes/roles
-      # chef.add_role("base-servers")
+      chef.add_role("chef-server")
     end
 
     # Personnalisation du provider : virtualbox
